@@ -20,7 +20,7 @@ export default function Heroe() {
         getheroes().catch(null);
     }, []);
 
-    function xd(id){
+    function Redic(id){
         localStorage.setItem('idheroe',id.target.getAttribute('value'))
         window.location.href="/commit"
     }
@@ -41,7 +41,7 @@ export default function Heroe() {
                         <Card.Text>
                             {data.rol}
                         </Card.Text>
-                        <center><Button style={{background:'green'}} key={data.id_heroe} value={data.id_heroe} onClick={xd}>Comentar</Button></center>
+                        <center><Button style={{background:'green'}} key={data.id_heroe} value={data.id_heroe} onClick={Redic}>Comentar</Button></center>
                         </Card.Body>
                     </Card>
                 </div>
